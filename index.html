@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Motu! 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Cute Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Sacramento&display=swap" rel="stylesheet" />
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div class="bg-decorations">
+    <span class="floating-emoji">🌸</span>
+    <span class="floating-emoji">✨</span>
+    <span class="floating-emoji">🎀</span>
+    <span class="floating-emoji">💖</span>
+  </div>
+
+  <main class="card-container">
+    <!-- Header Section -->
+    <header class="header">
+      <span class="badge">Happy Birthday! 🎂</span>
+      <h1 class="main-title">Happy Birthday, Motu! 💕</h1>
+      <p class="subtitle">To my sweetest, most breathtaking <i>Jaan</i>.</p>
+    </header>
+
+    <!-- Gentle Bedrest Note -->
+    <section class="healing-note">
+      <div class="pill-icon">🩹 ✨</div>
+      <p class="note-text">
+        Rest up and stay cozy, my brave superhero! A fractured leg might keep you in bed for a bit, 
+        but it can't stop you from running through my mind 24/7. Get well soon, Jaan! 💖
+      </p>
+    </section>
+
+    <!-- NEW SECTION: Beauty & Charm -->
+    <section class="love-notes-section">
+      <h3>✨ My Pretty Girl ✨</h3>
+      <div class="love-card">
+        <p>Even without trying, your charm lights up every room you're in. Your radiant smile and those sparkling eyes are my favorite view in the whole universe.</p>
+      </div>
+      <div class="love-card">
+        <p>You have a heart purer than gold and a grace that leaves me completely captivated. Loving you, my dearest Motu, is the easiest and most magical thing I've ever done.</p>
+      </div>
+    </section>
+
+    <!-- Magic Tools Section -->
+    <section class="magic-section">
+      <h3>✨ Magic Birthday Tools ✨</h3>
+      <p>Tap these to sprinkle a little extra cheer into your day!</p>
+      <div class="magic-buttons">
+        <button id="confettiBtn" class="btn magic-btn">🎉 Burst Confetti</button>
+        <button id="heartsBtn" class="btn magic-btn">💖 Heart Shower</button>
+        <button id="wandBtn" class="btn magic-btn">🪄 Cast Magic</button>
+      </div>
+    </section>
+
+    <!-- Secret Envelopes Section -->
+    <section class="envelopes-section">
+      <h3>💌 Secret Envelopes for Motu</h3>
+      <p>Click an envelope to open your secret note!</p>
+
+      <div class="envelope-grid">
+        <!-- Envelope 1 -->
+        <div class="envelope" onclick="openEnvelope('modal1')">
+          <div class="envelope-icon">✉️</div>
+          <span>Letter #1</span>
+        </div>
+        <!-- Envelope 2 -->
+        <div class="envelope" onclick="openEnvelope('modal2')">
+          <div class="envelope-icon">💌</div>
+          <span>Letter #2</span>
+        </div>
+        <!-- Envelope 3 -->
+        <div class="envelope" onclick="openEnvelope('modal3')">
+          <div class="envelope-icon">🎁</div>
+          <span>Letter #3</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Made with infinite love just for you, Motu 🥰</p>
+    </footer>
+  </main>
+
+  <!-- MODALS FOR SECRET ENVELOPES -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeEnvelope('modal1')">&times;</span>
+      <h3>👑 Why You're My Jaan</h3>
+      <p>Even resting in bed, you are the most stunning girl alive. Your cute laughter is my absolute favorite sound, and being loved by you is my greatest blessing!</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeEnvelope('modal2')">&times;</span>
+      <h3>🛋️ Bedrest VIP Coupon</h3>
+      <p>This coupon entitles my gorgeous Motu to endless snacks, unlimited movie marathons, and total princess treatment until that leg is 100% healed!</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeEnvelope('modal3')">&times;</span>
+      <h3>🎂 Forever & Always</h3>
+      <p>May this year bring you endless happiness, swift healing, and all the sweet treats you deserve. Happy Birthday to the girl who holds my whole heart!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
